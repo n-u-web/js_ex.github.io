@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>js_praktika</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <p class="about"></p>
+    </div>
+    <div class="container ex1">
+        <div class="divForCheckbox">
+            <p class="textForCheckbox">Это условный текст некоторого соглашения, например, при установке программного
+                обеспечения на свой ПК</p>
+            <label class="cssBoxCheckbox"><input type="checkbox" id="firstCheckbox">Я принимаю условия
+                соглашения</label>
+            <input type="submit" class="cssForCheckboxSubmit" id="buttonForCheck" value="ДАЛЕЕ"><span
+                class="answerCheckboxSubmit"></span>
+        </div>
+    </div>
+    <div class="container ex2">
+        <div class="divForRadio">
+            <p class="cssP">Выберите способ оплаты:</p>
+            <label class="cssBoxCheckbox"><input class="cssInputRadio" type="radio" name="radio_1" value="1">Оплата
+                наличными курьеру </label>
+            <label class="cssBoxCheckbox"><input class="cssInputRadio" type="radio" name="radio_1" value="2">Безналичная
+                оплата на сайте</label>
+            <label class="cssBoxCheckbox"><input class="cssInputRadio" type="radio" name="radio_1" value="3">Наложенный
+                платеж / на почте</label>
+            <input type="submit" class="cssForCheckboxSubmit" id="buttonForRadio" value="ВЫБРАТЬ"><span
+                class="answerRadioSubmit"></span>
+        </div>
+    </div>
+    <div class="container ex3">
+        <div class="divForRadio">
+            <p class="cssP">Выберите цвет:</p>
+            <div class="colorContainer">
+                <div class="colorBox"></div>
+                <select name="" id="selectColor">
+                    <option value="v0" selected>черный</option>
+                    <option value="v1">белый</option>
+                    <option value="v2">красный</option>
+                    <option value="v3">золотой</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="container ex4">
+        <div class="divForRadio">
+            <p class="cssP">Вклад "Семейный", срок 12 мес., ставка 6%:</p>
+            <p class="cssEm">Выберите сумму вклада (тыс.руб.):</p>
+            <input type="range" class="cssInputRange" min="50" max="1000" step="5" value="50">
+            <p class="sumRange">...</p>
+            <p class="cssEm">Ваш доход составит (руб.):</p>
+            <p class="sumCalc">...</p>
+
+        </div>
+    </div>
+    <div class="container ex5">
+        <div class="divForRadio">
+            <p class="cssP">Выберите свой тариф:</p>
+            <div id="tabs">
+                <div class="tab whiteborder">«Всё»</div>
+                <div class="tab">«Мой»</div>
+                <div class="tab">«Max»</div>
+                <div class="tabContent">Описание тарифа «Всё»...</div>
+                <div class="tabContent">Описание тарифа «Мой»...</div>
+                <div class="tabContent">Описание тарифа «Max»...</div>
+            </div>
+        </div>
+    </div>
+    <div class="container ex6">
+        <div class="divForRadio divex6">
+            <p class="cssP">Мои контакты:</p>
+            <input type="text" id="inputSearch" placeholder="Поиск по имени..."><span class="cssSpan">&#128269;</span>
+            <ul id="ulSearchPhone">
+                <li class="liPhone"><a href="##" class="aP headerPhone">А</a></li>
+                <li class="liPhone"><a href="##" class="aP contactPhone">Александр</a></li>
+                <li class="liPhone"><a href="##" class="aP contactPhone">Артур</a></li>
+                <li class="liPhone"><a href="##" class="aP contactPhone">Афанасий</a></li>
+                <li class="liPhone"><a href="##" class="aP headerPhone">Б</a></li>
+                <li class="liPhone"><a href="##" class="aP contactPhone">Барбара</a></li>
+                <li class="liPhone"><a href="##" class="aP contactPhone">Билл</a></li>
+                <li class="liPhone"><a href="##" class="aP contactPhone">Борис</a></li>
+                <li class="liPhone"><a href="##" class="aP headerPhone">С</a></li>
+                <li class="liPhone"><a href="##" class="aP contactPhone">Сергей</a></li>
+                <li class="liPhone"><a href="##" class="aP contactPhone">Стас</a></li>
+                <li class="liPhone"><a href="##" class="aP contactPhone">Сулико</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container ex7">
+        <div class="divForRadio divex7">
+            <p class="cssP">Часто задаваемые вопросы:</p>
+            <button class="quAccordion">&#8226; Кто должен позаботиться об отключении
+                воды?</button>
+            <div class="answerAccordion">
+                <p>Наш мастер сам договорится с УК, от Вас никаких действий не требуется.</p>
+            </div>
+            <button class="quAccordion">&#8226; Какой гарантийный срок?</button>
+            <div class="answerAccordion">
+                <p>Гарантия на оборудование и материалы 1 год, на работы - 1 месяц.</p>
+            </div>
+            <button class="quAccordion">&#8226; Сколько стоит вызов мастера?</button>
+            <div class="answerAccordion">
+                <p>При заключении договора - бесплатно, иначе - 500 руб.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container ex8">
+        <div class="divForRadio divex8">
+            <p class="cssP">Счетчик с сохранением при закрытии страницы:</p>
+            <div class="divCounter">
+                <div class="ball">
+                    <img src="./img/ball.jpg" class="activeBall" alt="">
+                </div>
+            </div>
+            <div class="divCounterValue">
+                <p>Мячей в корзине (шт.): <span class="counterValue"></span></p>
+            </div>
+        </div>
+    </div>
+    <div class="container ex9">
+        <div class="divForRadio divex8">
+            <p class="cssP">Оцените фото / фильм и т.п.:</p>
+            <div>
+                <div class="stars">
+                    <p class="star">★</p>
+                    <p class="star">★</p>
+                    <p class="star">★</p>
+                    <p class="star">★</p>
+                    <p class="star">★</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container ex10">
+        <div class="divForRadio divex8">
+            <p class="cssP">Палиндром или нет? Проверить слово, фразу:</p>
+            <input class="palindromInput" type="text" pattern="^[а-яА-ЯеЁa-zA-Z]+$" required
+                placeholder="А роза упала на лапу Азора">
+            <button class="palindromButton">ПРОВЕРИТЬ</button>
+            <div class="palindromAnswer">Результат проверки:<span class="palindromRes">...</span></div>
+        </div>
+    </div>
+    <div class="container ex11">
+        <div class="divForRadio divex8">
+            <p class="cssP">При наведении мыши начинается дискотека:</p>
+            <p class="disco">&#10026; DISCO &#10026;</p>
+        </div>
+    </div>
+
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
